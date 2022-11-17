@@ -44,7 +44,7 @@
       document.querySelector('.chat-content').insertAdjacentHTML('beforeend',  template1);
 
 
-      let q = 'http://aichat.vercel.app/translate?q=' + document.querySelector('#input').value;
+      let q = 'https://aichat.vercel.app/translate?q=' + document.querySelector('#input').value;
       axios.get(q).then(r => {
 
         var 결과 = JSON.parse(r.data).message.result.translatedText;
