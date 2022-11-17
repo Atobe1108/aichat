@@ -4,7 +4,7 @@ var request = require('request');
 var { OpenAIApi, Configuration } = require('openai');
 
 let config = new Configuration({
-  apiKey: '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',
+  apiKey: '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',
 });
 let openai = new OpenAIApi(config);
 
