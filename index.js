@@ -11,7 +11,8 @@ let openai = new OpenAIApi(config);
 
 
 app.get('/', function(req,res){
-  res.sendFile(__dirname + '/index.html')
+  //res.sendFile(__dirname + '/index.html')
+  res.send(keynum)
 })
 
 var client_id = 'kmGVtSfGTwttlcjmeICW';
