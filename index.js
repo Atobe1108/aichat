@@ -1,10 +1,10 @@
-var express = require('express');
+import {keynum} from './key.js'
+import express from 'express'
 var app = express();
-var request = require('request');
-var { OpenAIApi, Configuration } = require('openai');
-
+import request from 'request'
+import { OpenAIApi, Configuration } from 'openai'
 let config = new Configuration({
-  apiKey: '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',
+  apiKey: keynum,
 });
 let openai = new OpenAIApi(config);
 
